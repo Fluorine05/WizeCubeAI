@@ -30,7 +30,6 @@ private:
     static LRESULT CALLBACK HookProc(int code, WPARAM wParam, LPARAM lParam) {
         if (code == HC_ACTION && wParam == WM_KEYDOWN) {
             auto info = reinterpret_cast<KBDLLHOOKSTRUCT*>(lParam);
-            // ✅ Change VK_MENU (Alt) to VK_CONTROL (Ctrl)
             if (info->vkCode == VK_SPACE && (GetAsyncKeyState(VK_CONTROL) & 0x8000)) {
                 if (get().m_callback) get().m_callback();
             }
