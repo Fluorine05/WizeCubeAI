@@ -38,7 +38,7 @@ static std::string wrapText(const std::string& in, size_t w = 48) {
 }
 static CCSprite* safeCreateSprite(const char* name) {
     if (auto s = CCSprite::create(name)) return s;
-    log::error("❌ failed to load {}", name);
+    log::error("failed to load {}", name);
     return nullptr;
 }
 static CCSprite* safeCreateFallback(const char* name) {
