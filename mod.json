@@ -1,0 +1,20 @@
+{
+	"geode": "4.3.1",
+	"gd": {
+	  "win": "2.2074",
+	  "android": "2.2074",
+	  "mac": "2.2074",
+	  "ios": "2.2074"
+	},
+	"id": "fluorine.wizecubeai",
+	"name": "Wize Cube AI",
+	"version": "v1.0.0",
+	"developer": "Fluorine",
+	"description": "Talk to an AI in game using control + space",
+	"resources": {
+	  "sprites": [
+		"ai_background.png",
+		"wize_cube.png"
+	  ]
+  	}
+}
